@@ -1,36 +1,43 @@
 body {
-  background-color: #F0F8FF;
-}
-
-.nav-link {
-  color: #000000 !important;
+  background-color: #dce5dc;
 }
 
 .navbar {
-  background-color: #B0C4DE !important;
+  background-color: #323332 !important;
+  height: 75px;
 }
 
 .nav-container {
   font-family: minion-3-display, serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-.active, .navbar-brand {
-  font-weight: 600;
-}
-
-.nav-item {
+.nav-item a {
   padding: 0 4%;
+  color: #aaaaaa !important;
 }
 
-.Photo-Container {
+.active a {
+  color: #eeeeee !important;
+}
+
+.nav-item:hover a {
+  color: #eeeeee !important;
+}
+
+.navbar-brand {
+  color: #aaaaaa !important;
+  font-weight: 700;
+}
+
+.photo-container {
   width: 700px;
   margin: 10px;
 }
 
-.Home-Page {
+.home-page {
   margin: 20px, auto;
   display: flex;
   justify-content: center;
@@ -55,45 +62,12 @@ body {
   margin-top: 20px;
 }
 
-.footer-container {
-  position: fixed;
-  bottom: 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #000000;
-  font-size: 12px;
-  box-sizing: border-box;
-  width: 15%;
-  text-align: left;
-  font: bold 12px sans-serif;
-  padding: 5px 5px 5px 5px;
-  margin-top: 5px;
-}
-
-.footer {
-  margin-top: 5px;
-}
-
-.footer-holder {
-  display: flex;
-  justify-content: flex-end;
-}
-
-@media (max-height:800px) {
-  footer {
-    position: static;
-  }
-}
-
-.Menu-Container {
+.menu-container {
   display: flex;
   justify-content: center;
 }
 
-.Menu-Grid {
+.menu-grid {
   width: 90%;
   height: auto;
   display: flex;
@@ -102,8 +76,14 @@ body {
   flex-wrap: wrap;
 }
 
-.Menu-Grid p {
+.menu-grid p {
   font-style: italic;
+}
+
+.menu-pic {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
 }
 
 .pic-container {
@@ -119,45 +99,46 @@ body {
   margin-top: 40px;
 }
 
-.About-Container {
+.about-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 50px;
   padding-top: 10px;
-  background-color: #FAEBD7;
+  background-color: #E5ECE5;
+  border: 1px solid #D8E2D8;
   border-radius: 7px;
   width: 45%;
 }
 
-.About-Cafe p {
+.about-cafe p {
   font-family: inter, sans-serif;
   font-style: italic;
   font-size: 20px;
   margin-top: 20px;
 }
 
-.About-Cafe {
+.about-cafe {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.About-Page {
+.about-page {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   align-items: center;
 }
 
-.About-Cafe h3 {
+.about-cafe h3 {
   text-align: center;
 }
 
-.Review-Page {
+.review-page {
   display: flex;
   justify-content: center;
 }
 
-.Judge-Grid {
+.judge-grid {
   margin-top: 7%;
   width: 80%;
   display: flex;
@@ -167,19 +148,28 @@ body {
   font-size: 15px;
 }
 
+.judge {
+  background-color: #E5ECE5;
+  padding: 13px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #D8E2D8;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .judge-pic p {
-  text-align: left;
+  text-align: center;
   font-style: italic;
   font-size: 10px;
 }
 
-.judge {
-  background-color: #FAEBD7;
-  padding: 13px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 30%;
-  height: 100%
+.judge-pic img {
+  border-radius: 2px;
+  border: 1px solid #909090;
 }
 
 .github-footer-fixed {
@@ -192,8 +182,12 @@ body {
 }
 
 @media only screen and (max-width: 799px) {
-  .Photo-Container {
+  .photo-container {
     width: 90vw;
+  }
+
+  .judge-grid {
+    width: 100%;
   }
 
   .limited-item {
@@ -208,11 +202,11 @@ body {
 
 /* tablet */
 @media only screen and (max-width: 960px) {
-  .Menu-Grid {
+  .menu-grid {
     align-items: center;
   }
 
-  .Judge-Grid {
+  .judge-grid {
     flex-flow: column;
   }
 
@@ -220,15 +214,12 @@ body {
     width: 70%
   }
 
-  .About-Page {
+  .about-page {
     flex-flow: column;
   }
 
-  .About-Container {
+  .about-container {
     width: 80%;
-  }
-
-  .About-Container {
     order: -1;
   }
 
@@ -239,11 +230,11 @@ body {
 
 /* wide tablet */
 @media only screen and (max-width: 1175px) {
-  .Menu-Grid {
+  .menu-grid {
     align-content: stretch;
   }
 
-  .Home-Page {
+  .home-page {
     flex-flow: column;
   }
 
