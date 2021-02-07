@@ -3,8 +3,7 @@ body {
 }
 
 .navbar {
-  background-color: #323332 !important;
-  height: 75px;
+  background-color: #18212A !important;
 }
 
 .nav-container {
@@ -28,8 +27,14 @@ body {
 }
 
 .navbar-brand {
-  color: #aaaaaa !important;
+  font-family: cinque-donne, serif;
   font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  color: #aaaaaa !important;
+  margin-right: 25px;
+  margin-left: 15px;
+  margin-top: 4px;
 }
 
 .photo-container {
@@ -45,20 +50,27 @@ body {
 }
 
 .limited-item {
-  font-family: inter, sans-serif;
   margin: 10px;
   width: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-style: italic;
 }
 
 .limited-item h3 {
+  font-family: cinque-donne, serif;
   font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.limited-item img {
+  border-radius: 25px;
 }
 
 .description {
+  text-align: center;
+  font-style: italic;
   margin-top: 20px;
 }
 
@@ -81,9 +93,18 @@ body {
 }
 
 .menu-pic {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
+  margin: 10px;
+  width: 275px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-pic img {
+  width: 100%;
+  height: auto;
 }
 
 .pic-container {
@@ -111,10 +132,19 @@ body {
 }
 
 .about-cafe p {
-  font-family: inter, sans-serif;
-  font-style: italic;
   font-size: 20px;
   margin-top: 20px;
+  font-family: macho, sans-serif;
+  font-weight: 400;
+}
+
+.about-cafe h3 {
+  text-align: center;
+  font-family: cinque-donne, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 45px;
+  margin: 10px;
 }
 
 .about-cafe {
@@ -129,10 +159,6 @@ body {
   align-items: center;
 }
 
-.about-cafe h3 {
-  text-align: center;
-}
-
 .review-page {
   display: flex;
   justify-content: center;
@@ -144,11 +170,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: inter, sans-serif;
   font-size: 15px;
 }
 
 .judge {
+  font-family: macho, sans-serif;
+  font-weight: 400;
   background-color: #E5ECE5;
   padding: 13px;
   margin: 10px;
@@ -240,5 +267,11 @@ body {
 
   .limited-item {
     margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1176px) {
+  .menu-pic {
+    width: 400px;
   }
 }
